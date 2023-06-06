@@ -1,18 +1,19 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 /* NAVBAR */
 
-.flipkartword{
+.flipkartword {
     /* height: 40px;
     width: 40px; */
-    
+
 }
-.log{
-}
-nav{
+
+.log {}
+
+nav {
     margin: 0px;
     padding: 0px;
     background-color: #2874f0;
@@ -22,65 +23,204 @@ nav{
     align-items: center;
     padding: 5px 5px;
 }
-.logo p{
-color: white;
-position: relative;
-top: -5px;
-font-size: 12px;
+
+.logo p {
+    color: white;
+    position: relative;
+    top: -5px;
+    font-size: 12px;
 }
-.plus{
+
+.plus {
     color: #fce304;
     font-weight: bold;
 }
+
 /* NAVBAR SEARCH */
-.search{
+.search {
     background-color: white;
     padding: 10px;
     width: 600px;
     margin: 0px 15px;
     display: flex;
     justify-content: space-between;
-    color: 
-    #2874f0;
-    box-shadow: -7px -7px 10px rgba(0,0,0,0.1),7px 7px 10px rgba(0,0,0,0.1);
+    color:
+        #2874f0;
+    box-shadow: -7px -7px 10px rgba(0, 0, 0, 0.1), 7px 7px 10px rgba(0, 0, 0, 0.1);
 }
 
-.search input{
+.search input {
     width: 350px;
     border: none;
     outline: none;
     font-size: 14px;
 }
+
+.recentsearch {
+    position: absolute;
+    top: 22px;
+    margin-top: 26px;
+    margin-left: -10px;
+    padding: 20px 30px 10px 20px;
+    width: 570px;
+    height: 350px;
+    background-color: white;
+    color: rgb(97, 92, 92);
+    box-shadow: -7px -7px 10px rgba(0, 0, 0, 0.1), 7px 7px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.recentsearch span {
+    padding-left: 10px;
+}
+
+.discovermore {
+    margin-top: 20px;
+    font-size: 14px;
+    height: 30px;
+    align-items: center;
+}
+
+.search:focus-within .recentsearch {
+    display: block;
+}
+
 /* LOGIN BUTTON */
-.loginbtn{
+.loginbtn {
+    text-align: center;
     height: 35px;
     width: 100px;
     color: #2874f0;
     font-weight: 600;
     font-size: 15px;
-    
+
 }
-.login{
+
+.login {
     padding-left: 30px;
 }
-a{
+
+.Bs,
+.M,
+.cart {
     color: white;
     font-weight: bolder;
     text-decoration: none;
     padding-left: 40px;
 }
-.fa-angle-down{
+
+
+
+.hoverlogin {
+    position: relative;
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    top: 27px;
+    margin-left: -120px;
+    box-shadow: -7px -7px 10px rgba(0, 0, 0, 0.1), 7px 7px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 20px;
+    font-weight: 500;
+    color: black;
+    display: none;
+}
+
+.loginbtn:hover .hoverlogin {
+    display: block;
+}
+
+.Newuser {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.Newuser a {
+    color: #2874f0;
+    text-decoration: none;
+}
+
+.Newuser a:hover {
+    text-decoration: underline;
+}
+
+.triangle-up {
+    position: relative;
+    top: -11px;
+    left: 45%;
+    height: 0;
+    width: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 13px solid white;
+}
+
+.loginMenu {
+    width: 300px;
+    margin-top: 25px;
+}
+
+.menulist {
+    display: flex;
+    padding: 10px 0px;
+}
+
+.menulist p {
+    padding-left: 40px;
+}
+
+.menulist i {
+    padding-left: 5px;
+}
+
+.menulist i {
+    color: #2874f0;
+}
+
+/* NAVBAR MORE */
+.fa-angle-down {
     position: relative;
     top: 1px;
     font-size: 10px;
 }
-.recentsearch{
-    position: absolute;
-    top: 22px;
-    margin-top: 26px;
-    margin-left: -10px;
-    width: 620px;
-    height: 350px;
+
+.M:hover .fa-angle-down {
+    transition: 0.5s;
+    transform: rotate(-180deg);
+}
+
+.moreoptioncontainer {
+    color: rgb(97, 92, 92);
     background-color: white;
-    box-shadow: -7px -7px 10px rgba(0,0,0,0.1),7px 7px 10px rgba(0,0,0,0.1);
+    position: absolute;
+    margin-left: 45px;
+    top: 60px;
+    /* right: 135px; */
+    right: 8%;
+    width: 250px;
+    height: 200px;
+    box-shadow: -7px -7px 10px rgba(0, 0, 0, 0.1), 7px 7px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.moreoptions {
+    display: flex;
+    padding: 15px 15px;
+    align-items: center;
+}
+
+.moreoptions p {
+    padding-left: 10px;
+}
+
+.moreoptions i{
+    color: #2874f0;
+}
+
+.M:hover .moreoptioncontainer{
+    display: block;
 }
