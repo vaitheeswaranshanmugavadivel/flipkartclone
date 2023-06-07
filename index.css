@@ -17,7 +17,6 @@ nav {
     margin: 0px;
     padding: 0px;
     background-color: #2874f0;
-    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,6 +92,7 @@ nav {
     color: #2874f0;
     font-weight: 600;
     font-size: 15px;
+    cursor: pointer;
 
 }
 
@@ -217,10 +217,111 @@ nav {
     padding-left: 10px;
 }
 
-.moreoptions i{
+.moreoptions i {
     color: #2874f0;
 }
 
-.M:hover .moreoptioncontainer{
+.M:hover .moreoptioncontainer {
     display: block;
+}
+
+.triangle {
+    position: relative;
+    top: -22px;
+    left: 45%;
+    height: 0px;
+    width: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 25px solid white;
+}
+
+/* TOP PRODUCTS HEADER */
+.topproductsheader {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    background-color: white;
+    margin: 5px 0px;
+    justify-content: space-evenly;
+    box-shadow: -7px -7px 10px rgba(0, 0, 0, 0.1), 7px 7px 10px rgba(0, 0, 0, 0.1);
+}
+
+.topproducts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topproducts p:hover {
+    color: #2874f0;
+    cursor: pointer;
+}
+
+/* SLIDER */
+
+.slider {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.Slider_image img {
+    width: 98.5%;
+    padding: 20px 15px 10px 15px;
+    animation: 15s slideimg infinite;
+}
+
+.Slider_image {
+    display: flex;
+
+}
+
+.btn-container {
+    margin: auto;
+    width: 10px;
+}
+
+.btn {
+    position: relative;
+    padding: 35px 15px;
+    background-color: white;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.btn-left {
+    position: relative;
+    left: 24px;
+    z-index: 5;
+}
+
+.btn-right {
+    position: relative;
+    right: 55px;
+}
+
+/* SLIDER IMAGE WITH CSS ANIMATION*/
+@keyframes slideimg {
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-100%);
+    }
+
+    40% {
+        transform: translateX(-200%);
+    }
+
+    60% {
+        transform: translateX(-300%);
+    }
+
+    80% {
+        transform: translateX(-400%);
+    }
 }
