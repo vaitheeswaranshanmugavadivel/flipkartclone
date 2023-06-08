@@ -389,18 +389,64 @@ nav {
     padding: 0px 0px 0px 91px;
 }
 
+.textslp1₹ {
+    color: #388e3c;
+    padding-left: 80px;
+    font-size: 21px;
+}
+
 .textslp2 {
     padding: 0px 0px 0px 37px;
+}
+
+.textslp2sn {
+    color: #388e3c;
+    padding-left: 80px;
+    font-size: 21px;
+}
+
+.textslp2desc {
+    padding-left: 64px;
 }
 
 .textslp3 {
     padding: 0px 0px 0px 96px;
 }
 
+.textslp3₹{
+    color: #388e3c;
+    font-size: 21px;
+    padding-left: 78px;
+}
+
+.textslp3desc{
+    padding-left: 103px;
+}
+
 .textslp4 {
-    padding: 0px 0px 0px 69px;
+    padding: 0px 0px 0px 100px;
+}
+
+.textslp4₹{
+    color: #388e3c;
+    font-size: 21px;
+    padding-left: 78px;
+}
+
+.textslp4desc{
+    padding-left: 113px;
 }
 
 .textslp5 {
     padding: 0px 0px 0px 47px;
+}
+
+.textslp5₹{
+    color: #388e3c;
+    font-size: 21px;
+    padding-left: 85px;
+}
+
+.textslp5desc{
+    padding-left: 75px;
 }
